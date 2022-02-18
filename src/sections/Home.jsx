@@ -57,10 +57,11 @@ color:#0275d8;
 export default function Home() {
     const [index, setIndex] = React.useState(0);
     const TEXTS = [
-        "React",
-        "NodeJs",
+        "React JS",
+        "Node JS",
         "MongoDB",
-        "Express"
+      "Express JS",
+      "Next JS"
       ];
 
     React.useEffect(() => {

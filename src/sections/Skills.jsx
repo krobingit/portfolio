@@ -1,8 +1,16 @@
 import React ,{useEffect}from 'react'
 import styled from 'styled-components'
 import { medium,small } from '../responsive';
-import { GiBullets } from "react-icons/gi";
-import { FcApproval } from "react-icons/fc";
+import html from "../assets/html.svg";
+import nextjs from "../assets/nextjs.svg";
+import javascript from "../assets/javascript.svg";
+import materialui from "../assets/material-ui.svg";
+import react from "../assets/react.svg";
+import css from "../assets/css3.svg";
+import mongodb from "../assets/mongodb.svg";
+import postgresql from "../assets/postgresql.svg";
+import bootstrap from "../assets/bootstrap.svg";
+import nodejs from "../assets/nodejs.svg";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -12,10 +20,6 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-top: 1rem;
-`
-const IconDiv=styled.div`
-color: grey;
-font-size: 3.5rem;
 `
 const IconHeader=styled.div`
 font-size: 1.3rem;
@@ -64,13 +68,16 @@ font-weight: 500;
 font-size: 1.4rem;
 display: flex;
 gap:1rem;
-
+`
+const SkillImage = styled.img`
+width:30px;
+height:30px;
 `
 
 export default function Skills() {
 
-    let leftArray=["HTML","CSS","Javascript","Bootstrap"]
-    let rightArray=["React","NodeJs","MongoDB & MySQL","ExpressJs"]
+    let leftArray = [{ name:"HTML",img:html},{ name:"CSS",img:css},{ name:"Javascript",img:javascript},{ name:"Bootstrap",img:bootstrap},{ name:"Material UI",img:materialui}]
+    let rightArray=[{ name:"React JS",img:react},{ name:"Node JS",img:nodejs},{ name:"MongoDB",img:mongodb},{ name:"PostGreSQL",img:postgresql},{ name:"Next JS",img:nextjs}]
 
     useEffect(() => {
         AOS.init({})
@@ -79,7 +86,7 @@ export default function Skills() {
     return (
         <div id="skills">
              <HeaderContainer>
-                    <IconDiv><GiBullets/></IconDiv>
+
                     <IconHeader>Skills & Technologies</IconHeader>
             </HeaderContainer>
             <Container>
@@ -90,9 +97,11 @@ export default function Skills() {
                               leftArray.map((a)=>{
                                 return(
                                     <>
-                                    <InputContainer>
-                                    <div><FcApproval style={{fontSize:"1.5rem"}}/></div>
-                                    <div>{a}</div>
+
+                                        <InputContainer>
+                                                      <SkillImage src={a.img} alt="skill" />
+
+                                    <div>{a.name}</div>
                                     </InputContainer>
                                     </>
                                 )
@@ -105,9 +114,10 @@ export default function Skills() {
                               rightArray.map((a)=>{
                                 return(
                                     <>
-                                    <InputContainer>
-                                    <div><FcApproval style={{fontSize:"1.5rem"}}/></div>
-                                    <div>{a}</div>
+                                        <InputContainer>
+                                            <SkillImage src={a.img} alt="skill" />
+
+                                    <div>{a.name}</div>
                                     </InputContainer>
                                     </>
                                 )
