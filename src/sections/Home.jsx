@@ -8,7 +8,6 @@ import Resume from "../assets/Robin K.pdf"
 import {Link as LinkS} from 'react-scroll'
 import { small } from '../responsive';
 
-
 const MainContainer=styled.div`
 display: flex;
 flex-direction: column;
@@ -56,13 +55,15 @@ color:#0275d8;
 
 export default function Home() {
     const [index, setIndex] = React.useState(0);
-    const TEXTS = [
+  const TEXTS = [
+     "Javascript",
         "React JS",
         "Node JS",
         "MongoDB",
       "Express JS",
       "Next JS"
-      ];
+    ];
+
 
     React.useEffect(() => {
 
@@ -82,7 +83,7 @@ export default function Home() {
                     <HeaderContainer> Robin K</HeaderContainer>
               <SContainer ><p >Full stack Developer</p></SContainer>
               <SContainer ><p style={{letterSpacing:"5px"}}>MERN</p></SContainer>
-                    <TContainer>
+              <TContainer>
                     <TextTransition
                         text={ TEXTS[index % TEXTS.length] }
                         springConfig={ presets.wobbly }
