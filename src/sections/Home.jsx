@@ -1,9 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import Wave from 'react-wavify'
 import TextTransition, { presets } from "react-text-transition";
 import { HiDocumentDownload } from "react-icons/hi";
-import { AiFillAppstore } from "react-icons/ai";
 import Resume from "../assets/Resume.pdf"
 import {Link as LinkS} from 'react-scroll'
 import { small } from '../responsive';
@@ -38,7 +36,7 @@ ${small({marginTop:"5rem"})}
 `
 
 const HeaderContainer=styled.div`
-color:#0275d8;
+color:goldenrod;
 font-size: 4rem;
 font-weight: 700;
 text-align: center;
@@ -46,11 +44,12 @@ text-align: center;
 const SContainer=styled.div`
 font-size: 2.5rem;
 font-weight: 700;
+color:#627d98;
 `
 const TContainer=styled.div`
 font-size: 2.5rem;
 font-weight: 700;
-color:#0275d8;
+color:goldenrod;
 `
 
 export default function Home() {
@@ -82,7 +81,7 @@ export default function Home() {
                 <Container className="text-justify" >
                     <HeaderContainer> Robin K</HeaderContainer>
               <SContainer ><p >Full stack Developer</p></SContainer>
-              <SContainer ><p style={{letterSpacing:"5px"}}>MERN</p></SContainer>
+              <SContainer ><p style={{letterSpacing:"5px"}}>MERN STACK</p></SContainer>
               <TContainer>
                     <TextTransition
                         text={ TEXTS[index % TEXTS.length] }
@@ -90,27 +89,10 @@ export default function Home() {
                     />
                     </TContainer>
                     <SContainer>
-                        <button className="btn btn-success"><a style={{color:"inherit",textDecoration:"none"}} href={Resume} download><HiDocumentDownload style={{fontSize:"1.5rem"}}/>Resume</a></button>
-                        <button className="btn btn-secondary mx-2"> <AiFillAppstore style={{fontSize:"1.5rem"}}/>
-                        <NavLinks to='projects' spy={true} smooth={true}  duration={500}>Project</NavLinks>
-                        </button>
+                        <button className="btn btn-secondary"><a style={{color:"inherit",textDecoration:"none"}} href={Resume} download><HiDocumentDownload style={{fontSize:"1.5rem"}}/>Resume</a></button>
                     </SContainer>
                 </Container>
         </MainDiv >
-
-        <MainDiv  className="d-flex flex-column justify-content-end " >
-            <div>
-         <Wave  fill='#0275d8'
-        paused={false}
-        options={{
-          height: 20,
-          amplitude: 20,
-          speed: 0.50,
-          points: 3
-        }}
-        />
-        </div>
-        </MainDiv>
         </MainContainer>
         </div>
     )

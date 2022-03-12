@@ -115,7 +115,7 @@ export default function Projects() {
         <div id="projects">
             <HeaderContainer>
 
-                    <IconHeader>Apps I've Built</IconHeader>
+                    <IconHeader>My Projects</IconHeader>
             </HeaderContainer>
             <Container>
                 <InnerContainer>

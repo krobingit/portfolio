@@ -4,7 +4,7 @@ import { AiFillGithub,AiFillLinkedin } from "react-icons/ai";
 
 
 const Container=styled.div`
-background-color: lightgrey;
+background-color: white;
 padding: 15px;
 display: flex;
 flex-direction: column;
