@@ -8,6 +8,7 @@ import tictactoe from "../assets/tictactoe.png"
 import filterSearch from "../assets/filterSearch.png"
 import currencyApp from "../assets/currencyApp.png"
 import weatherApp from "../assets/weatherApp.png"
+import registerApp from "../assets/registerApp.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -209,6 +210,22 @@ when exchanged with other foreign currency using HTML,CSS,JS</DetailBody>
                         </OuterCard>
 
 
+                        <OuterCard>
+                            <InnerCard>
+                                <Card data-aos="zoom-out">
+                                    <CardImg src={registerApp}/>
+                                    <CardDetails>
+                                        <DetailHeader>Registration for User</DetailHeader>
+                                        <DetailBody>A Registration CRUD app build on MERN Stack which allows you to register,edit,delete and view all users</DetailBody>
+                                        <DetailFooter>
+                                            <div><button className="btn btn-primary"><a style={styles} target="_blank"  href="https://registration-crud-ui.netlify.app/">Deployed Link</a></button></div>
+                                            <div><button className="btn btn-success"><a  style={styles} target="_blank" href="https://github.com/krobingit/Registration-CRUD-UI">View Code</a></button></div>
+                                        </DetailFooter>
+                                    </CardDetails>
+                                </Card>
+
+                            </InnerCard>
+                        </OuterCard>
 
 
 
