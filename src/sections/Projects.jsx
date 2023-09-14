@@ -5,7 +5,6 @@ import styled from 'styled-components'
 import { medium,small,large } from '../responsive';
 import shoptronics from "../assets/shoptronics.png"
 import tictactoe from "../assets/tictactoe.png"
-import filterSearch from "../assets/filterSearch.png"
 import currencyApp from "../assets/currencyApp.png"
 import weatherApp from "../assets/weatherApp.png"
 import registerApp from "../assets/registerApp.png"
@@ -157,7 +156,7 @@ export default function Projects() {
                             </InnerCard>
                         </OuterCard>
 
-                        <OuterCard>
+                       {/*  <OuterCard>
                             <InnerCard>
                                 <Card data-aos="zoom-out">
                                     <CardImg src={filterSearch}/>
@@ -172,7 +171,7 @@ export default function Projects() {
                                 </Card>
 
                             </InnerCard>
-                        </OuterCard>
+                        </OuterCard> */}
 
                         <OuterCard>
                             <InnerCard>
