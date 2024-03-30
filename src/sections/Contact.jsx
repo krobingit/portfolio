@@ -56,7 +56,7 @@ export default function Contact() {
                         <ContactContainer>
                             <ContactItem ><AiOutlineMail/><a style={{color:"inherit",textDecoration:"none"}} href="mailto:liorobin5@gmail.com">liorobin5@gmail.com</a></ContactItem>
                             <ContactItem ><FiSmartphone/><a style={{color:"inherit",textDecoration:"none"}} href="tel:+919789762942">+91-9789762942</a></ContactItem>
-                            <ContactItem ><FiMapPin/>Trichy,Tamilnadu</ContactItem>
+                            <ContactItem ><FiMapPin/>Chennai,Tamilnadu</ContactItem>
                         </ContactContainer>
                </InnerContainer>
             </Container>
