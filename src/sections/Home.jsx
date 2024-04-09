@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import TextTransition, { presets } from "react-text-transition";
 import { HiDocumentDownload } from "react-icons/hi";
-import Resume from "../assets/Resume.pdf"
+/* import Resume from "../assets/Resume.pdf" */
 import {Link as LinkS} from 'react-scroll'
 import { small } from '../responsive';
 
@@ -89,7 +89,7 @@ export default function Home() {
                     />
                     </TContainer>
                     <SContainer>
-                        <button className="btn btn-secondary"><a style={{color:"inherit",textDecoration:"none"}} href={Resume} download><HiDocumentDownload style={{fontSize:"1.5rem"}}/>Resume</a></button>
+                        <button className="btn btn-secondary"><a style={{color:"inherit",textDecoration:"none"}} href={'/resume.pdf'} target={'_blank'} rel="noreferrer" /* download */><HiDocumentDownload style={{fontSize:"1.5rem"}}/>Resume</a></button>
                     </SContainer>
                 </Container>
         </MainDiv >
